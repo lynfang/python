@@ -1,11 +1,4 @@
-# -*- coding: UTF-8 -*-
-import time
-import string
-import os
-import re
-import urllib2  
-
-
-response = urllib2.urlopen("http://www.baidu.com/")  
-html = response.read()  
-print html 
+from urllib.request import urlopen
+#Retrieve HTML string from the URL
+html = urlopen("http://www.pythonscraping.com/exercises/exercise1.html")
+print(html.read())
