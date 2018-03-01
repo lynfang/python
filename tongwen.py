@@ -6,7 +6,8 @@ import re
 
 #tongwen_list = []
 sp_tongwen_list = []
-for  tongwen in range(100,999):
+count = {}
+for  tongwen in range(10000,99999):
     a = str(tongwen)[::-1]
     if a == str(tongwen):
         template1 = 0
@@ -17,5 +18,5 @@ for  tongwen in range(100,999):
         count[str(a)] = template1
             
 for test in count.keys():
-    if count[test] < 15:
-        print test
+    if count[test] < 35:
+        print test, count[test]
