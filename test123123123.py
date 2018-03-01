@@ -12,6 +12,6 @@ for int_a in str(a):
 
 print b
 
-#counter(a) = b 
+#counter(a) = b   
 #sort[line_zone] = lines
 counter[a] = b 
