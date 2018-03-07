@@ -4,7 +4,6 @@ import string
 import os
 import re
 
-
 db = []
 
 def newinfo():
