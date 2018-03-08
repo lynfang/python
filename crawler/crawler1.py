@@ -1,6 +1,10 @@
 from urllib.request import urlopen
 from urllib.error import HTTPError
 from bs4 import BeautifulSoup
+
+import requests
+
+
 def getTitle(url):
     try:
       html = urlopen(url)
@@ -12,8 +16,9 @@ def getTitle(url):
     except AttributeError as e:
       return None
     return title
-title = getTitle("http://www.lkong.net/forum-60-1.html")
+title = getTitle("http://192.168.16.243:8090/pages/viewpage.action?pageId=3871236")
 if title == None:
   print("Title could not be found")
 else:
-  print(title)
+  #print(title)
+  
